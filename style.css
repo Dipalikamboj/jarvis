@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main .image-container {
+    padding: 8px;
+}
+
+.main .image-container .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .image-container .image img {
+    width: 330px;
+    align-items: center;
+}
+
+.main .image-container h1 {
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.main .image-container p {
+    color: #4f595b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    max-width: 600px;
+    height: 50px;
+    color: #fff;
+    border-radius: 25px;
+    background: #1e1e1e;
+    padding: 0 15px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #00bcd4;
+}
+
+.main .input #writeInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+}
+
+.main .input #submitButton {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main .image-container .image img {
+        width: 250px;
+    }
+
+    .main .image-container h1 {
+        font-size: 30px;
+    }
+
+    .main .image-container p {
+        font-size: 14px;
+    }
+
+    .main .input {
+        width: 80vw;
+        height: 45px;
+    }
+
+    .main .input .talk,
+    .main .input #submitButton {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .main .input #writeInput {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .image-container .image img {
+        width: 200px;
+    }
+
+    .main .image-container h1 {
+        font-size: 24px;
+    }
+
+    .main .image-container p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .main .input {
+        width: 90vw;
+        height: 40px;
+    }
+
+    .main .input .talk,
+    .main .input #submitButton {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .main .input #writeInput {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
